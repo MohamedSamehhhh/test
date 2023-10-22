@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile/next.dart';
 
 class HomeScreen extends StatelessWidget {
   static const String routeName = "Home_screen";
@@ -12,7 +13,15 @@ class HomeScreen extends StatelessWidget {
             Text("hello", style: TextStyle(fontSize: 25, color: Colors.black)),
         centerTitle: true,
       ),
-      body: Container(color: Colors.red),
+      body: Column(
+        children: [
+          ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed(Next.routeName);
+              },
+              child: Text("Goo"))
+        ],
+      ),
     );
   }
 }

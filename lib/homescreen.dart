@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).pushNamed(Next.routeName);
               },
-              child: Text("Goo"))
+              child: Text("Goooooooo"))
         ],
       ),
     );
